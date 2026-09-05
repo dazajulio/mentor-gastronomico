@@ -151,15 +151,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.key === 'Enter') sendMessage();
     });
 
-    // Auto Trigger (30 segundos)
-    setTimeout(() => {
-        if (!chatWindow.classList.contains('active')) {
-            // Corrección: appendMessage requiere 'type' en el primer argumento
-            appendMessage('bot-message', "¿Te gustaría saber cuánto podrías aumentar tus ventas automatizando con IA?");
-            chatWindow.classList.add('active');
-        }
-    }, 30000);
-
     function triggerHeroAnimations() {
         const heroInits = document.querySelectorAll('#hero .fade-in-up');
         heroInits.forEach((el, index) => {

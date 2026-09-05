@@ -1,0 +1,8 @@
+# Node & Temp
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+
+# Dev server local
+dev-server.js
